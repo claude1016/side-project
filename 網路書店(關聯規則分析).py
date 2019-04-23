@@ -2,10 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from apyori import apriori
 
-read=r'C:\Users\Claude\Desktop\NKUST\碩一(下)\服務決策數據\HW3\網路書局.csv'
+read=r'C:/Users/Claude/Desktop/NKUST/碩一下/service decision/HW3/網路書局.csv'
 rv=open(read)
 data=pd.read_csv(rv)
-
 for  i  in  range(1,199):
           name=data.columns[i]
           data[name].replace(1,name,inplace=True) ##編碼轉換中文
